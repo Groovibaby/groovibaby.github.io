@@ -1,9 +1,68 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+@font-face {
+    font-family: 'Aniron';
+    src: url('fonts/AnironBold-mL9P.ttf') format('truetype');
+    }
+
+@font-face {
+    font-family: 'Tengwar Annatar';
+    src: url('fonts/tngan.ttf') format('truetype'),
+        url('fonts/tnganb.ttf') format('truetype'),
+        url('fonts/tnganbi.ttf') format('truetype'),
+        url('fonts/tngani.ttf') format('truetype');
+    }
+
+@font-face {
+    font-family: 'Party Business';
+    src: url('fonts/PartyBusiness-4B0K.ttf') format('truetype');
+    }
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Aniron', Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+h5.card-title {
+    font-family: 'Party Business', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+a {
+    font-family: 'Aniron', Arial, Helvetica, sans-serif;
+}
+
+.symbol {
+    font-family: 'Tengwar Annatar', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #D95C1C;
+}
+
+.orange {
+    color: #D95C1C;
+}
+
+/* HEADER */
 
 header {
-    background: #333;
+    background: #D95C1C;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 10%;
+    padding: 15px 0px;
+}
+
+.baseline {
+    display: flex;
+    width: 30%;
+}
+
+
+/* NAV */
+
+.nav-bar, .navbar-expand-lg {
+    padding: 0px;
 }
 
 nav {
@@ -14,13 +73,41 @@ nav a {
     color: #DEDEDE;
 }
 
-.nav-link {
-    padding: .7rem 1rem;
+.nav-items {
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
 }
 
-a.nav-link:hover {
-    background: #DEDEDE;
-    color: #333;
+.nav-link {
+    padding: .7rem 1rem;
+    color: #fff;
+}
+
+.nav-sep {
+    padding: .7rem 1rem;
+    color: #fff;
+    padding: 12px 0px;
+}
+
+.nav-link-end {
+    padding: .7rem 1rem;
+    color: #fff;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid #fff;
+    color: #fff;
+}
+
+.carousel-caption {
+    top: 40%;
+    font-size: 1.8em;
+}
+
+p {
+    font-family: 'Party Business', Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
 }
 
 #fellows > h2 {
@@ -33,12 +120,168 @@ a.nav-link:hover {
     font-weight: normal;
 }
 
-#card1:hover {
+.align-center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.centered {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.btn-primary {
+    transform: skewX(-20deg);
+    font-family: 'Party Business', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    border-radius: 0px;
+    background-color: #1A1A1A;
+    color: #D95C1C;
+    border: none;
+    box-shadow: 5px 2px 2px grey;
+}
+
+.btn-primary:hover {
+    background-color: #D95C1C;
+    color: #1A1A1A;
+    transition-duration: 0.5s;
+}
+
+.btn-primary2 {
+    transform: skewX(-20deg);
+    font-family: 'Aniron', Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    border-radius: 0px;
+    background-color: #fff;
+    color: #D95C1C;
+    border: none;
+    box-shadow: 5px 2px 2px grey;
+}
+
+.btn-primary2:hover {
+    background-color: #D95C1C;
+    color: #1A1A1A;
+    transition-duration: 0.5s;
+}
+
+.btn-primary3 {
+    transform: skewX(-20deg);
+    font-family: 'Aniron', Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    border-radius: 0px;
+    background-color: #1A1A1A;
+    color: #D95C1C;
+    border: none;
+    box-shadow: 5px 2px 2px grey;
+    margin: 10px -20px;
+}
+
+.btn-primary3:hover {
+    background-color: #D95C1C;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+.btn-secondary {
+    transform: skewX(-20deg);
+    border-radius: 0px;
+    background-color: #D95C1C;
+    color: #1A1A1A;
+    border: none;
+    box-shadow: 5px 2px 2px grey;
+    font-family: 'Aniron', Arial, Helvetica, sans-serif;
+}
+
+.btn-secondary:hover {
+    background-color: #1A1A1A;
+    color: #D95C1C;
+    transition-duration: 0.5s;
+}
+
+.card {
+    padding: 0px;
+    border: none;
+    background: none;
+    border: 5px solid #1A1A1A;
+}
+
+.card-hunters {
+    padding: 0px;
+    border: none;
+}
+
+.card-body-hunters {
+    padding: 0px;
+    border: none;
+    background: #DEDEDE;
+    padding: 15px 30px;
+}
+
+.card-about {
+    padding: 0px;
+    border: none;
+    background: #DEDEDE;
+}
+
+.card-links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-links a {
+    color: #1A1A1A;
+    margin: 20px 15px 10px 15px;
+}
+
+.card-links a:hover {
+    color: #D95C1C;
+    text-decoration: none;
+    border-bottom: 4px solid #D95C1C;
+    margin: 20px 15px 6px 15px;
+}
+
+.card-links-jewel {
+    font-family: 'Party Business', Arial, Helvetica, sans-serif;
+    color: #DDDDDD;
+    font-size: 2rem;
+}
+
+a#most-wanted:hover #card3 {
+    display: none;
+}
+
+.dead {
+    position: absolute;
+    z-index: 1;
+    font-family: 'Party Business', Arial, Helvetica, sans-serif;
+    color: #D95C1C;
+    font-size: 4rem;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.gimli {
+    filter: brightness(0.5);
+}
+
+a#most-wanted:hover ~ #card3 {
+    display: none;
+}
+
+a:hover .card-links-jewel {
+    color: #D95C1C;
+}
+
+#card1:hover .card-img-top {
     cursor: pointer;
     opacity: 0.8;
 }
 
-#card3:hover {
+#card2:hover .card-img-top {
     cursor: pointer;
     opacity: 0.8;
 }
@@ -51,6 +294,69 @@ a.nav-link:hover {
     display: block;
 }
 
+.card-title {
+    color: #fff;
+    font-family: 'Party Business', Arial, Helvetica, sans-serif;
+    font-size: 5rem !important;
+    position: absolute;
+    z-index: 2;
+    margin-top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.card-title2 {
+    color: #1A1A1A;
+    font-family: 'Party Business', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.card-title3 {
+    color: #D95C1C;
+    font-family: 'Party Business', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+.card-header {
+    font-family: 'Aniron', Arial, Helvetica, sans-serif;
+    background-color: #D95C1C;
+    font-size: 1.5rem;
+}
+
+.card-body {
+    background: #1A1A1A;
+    color: #fff;
+}
+
+.card-text a {
+    color: #000;
+}
+
+.card-text a:hover {
+    color: #000;
+}
+
+.btn-contact {
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    font-family: 'Aniron',Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.th {
+    background: none;
+    border-bottom: 3px solid #1A1A1A;
+}
+
+.gollum {
+    color: #1A1A1A;
+    text-align: right;
+    font-size: 2rem;
+}
+
 .reward {
     position: absolute;
     display: none;
@@ -58,14 +364,27 @@ a.nav-link:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    margin: 20px auto;
-    height: 50px;
-    width: 60%;
+    margin: 50px auto;
+    height: 90px;
+    width: 70%;
     text-align: center;
-    background: #555;
-    color: #fff;
+    background: #fff;
+    z-index: 1;
+    opacity: 0.7;
+    font-family: 'Party Business', Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    color: #1A1A1A;
     padding: 10px 20px;
     border-radius: 5px;
+}
+
+.bg-dark {
+    background-color: #1A1A1A !important;
+    color: #fff;
+}
+
+.bg-light {
+    background-color: #DDDDDD !important;
 }
 
 .bloc-img {
@@ -85,21 +404,103 @@ a {
 }
 
 a:hover {
-    color: darkgray;
+    color: #fff;
 }
 
 .page-footer {
-    background: #555;
+    background: #D95C1C;
 }
 
-.container-fluid {
-    padding: 0 50px;
+footer.container-fluid {
+    padding: 30px 50px;
 }
 
-.footer-copyright {
-    background: #333;
+@media screen and (max-width: 1100px) {
+    .h3-responsive {
+        font-size: 2rem;
+    }
+    .coin {
+        display: none;
+    }
+    .nav-items {
+        font-size: 0.7rem;
+    }
 }
 
-@media screen and (max-width: 770px) {
-    
+@media screen and (max-width: 992px) {
+    .card-title {
+        font-size: 3rem !important;
+    }
+    .card-links-jewel {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .nav-items {
+        display: none;
+    }
+    .baseline {
+        width: 100%;
+        justify-content: center;
+    }
+    .h3-responsive {
+        font-size: 1.3rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+    }
+    .carousel-caption {
+        font-size: 1rem;
+    }
+    .card-links a {
+        font-size: 1.7rem;
+    }
+    .card-title {
+        font-size: 3.5rem;
+        margin-top: 15px;
+    }
+    #best-hunters {
+        text-align: center;
+    }
+    .card {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    div#button-submit.form-group {
+        text-align: center;
+    }
+    .nav-items {
+        display: none;
+    }
+    .card-links {
+        display: none;
+    }
+    .card-deck {
+        width: 100%;
+    }
+    .reward {
+        margin: 150px auto;
+    }
+    .card-text {
+        font-size: 1rem;
+    }
+    .card-hunters {
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .card-text {
+        font-size: 2.5rem;
+    }
+    .card-title {
+        margin-top: 50%;
+        font-size: 5rem !important;
+    }
 }
