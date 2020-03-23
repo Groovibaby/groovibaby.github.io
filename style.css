@@ -1,9 +1,5 @@
-html, body {
+html {
     scroll-behavior: smooth;
-    margin:0;
-    padding:0;
-    max-width: 100%;
-    overflow-x: hidden;
   }
 
 @font-face {
@@ -294,7 +290,7 @@ a:hover .card-links-jewel {
     display: block;
 }
 
-#card3:hover .reward {
+#card2:hover .reward {
     display: block;
 }
 
